@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D7G-rD-X3d">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -81,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tir-by-FCT">
-                                <rect key="frame" x="20" y="823" width="374" height="39"/>
+                                <rect key="frame" x="20" y="818" width="374" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3y-pH-Oqy">
                                         <rect key="frame" x="0.0" y="5" width="340" height="34"/>
@@ -101,16 +101,16 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="O3y-pH-Oqy" firstAttribute="leading" secondItem="tir-by-FCT" secondAttribute="leading" id="Be0-S8-T9D"/>
-                                    <constraint firstAttribute="bottom" secondItem="O3y-pH-Oqy" secondAttribute="bottom" id="LB1-2B-xSl"/>
+                                    <constraint firstAttribute="bottom" secondItem="O3y-pH-Oqy" secondAttribute="bottom" constant="5" id="LB1-2B-xSl"/>
                                     <constraint firstItem="kdA-Ke-CJ6" firstAttribute="top" secondItem="tir-by-FCT" secondAttribute="top" constant="5" id="PYh-Ap-Oon"/>
                                     <constraint firstItem="kdA-Ke-CJ6" firstAttribute="leading" secondItem="O3y-pH-Oqy" secondAttribute="trailing" id="U7C-s1-eoX"/>
-                                    <constraint firstAttribute="bottom" secondItem="kdA-Ke-CJ6" secondAttribute="bottom" id="etK-YY-9Jz"/>
+                                    <constraint firstAttribute="bottom" secondItem="kdA-Ke-CJ6" secondAttribute="bottom" constant="5" id="etK-YY-9Jz"/>
                                     <constraint firstItem="O3y-pH-Oqy" firstAttribute="top" secondItem="tir-by-FCT" secondAttribute="top" constant="5" id="jtk-Dg-edb"/>
                                     <constraint firstAttribute="trailing" secondItem="kdA-Ke-CJ6" secondAttribute="trailing" id="mvd-X1-Odv"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0O7-Ro-PD8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="779"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
