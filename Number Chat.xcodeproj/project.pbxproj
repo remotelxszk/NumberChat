@@ -17,6 +17,7 @@
 		B443CBA8259D3FAF000FBA7D /* TextMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B443CBA7259D3FAF000FBA7D /* TextMessage.swift */; };
 		B44BF2BE259D5839001896F7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B44BF2BD259D5838001896F7 /* GoogleService-Info.plist */; };
 		B44BF2E1259DE568001896F7 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BF2E0259DE568001896F7 /* ChatViewController.swift */; };
+		B4773EAC259F708B00D172F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4773EAB259F708B00D172F0 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B443CBA7259D3FAF000FBA7D /* TextMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessage.swift; sourceTree = "<group>"; };
 		B44BF2BD259D5838001896F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B44BF2E0259DE568001896F7 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B4773EAB259F708B00D172F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				B443CB96259D0D17000FBA7D /* Assets.xcassets */,
 				B443CB9B259D0D17000FBA7D /* Info.plist */,
 				B44BF2BD259D5838001896F7 /* GoogleService-Info.plist */,
+				B4773EAB259F708B00D172F0 /* Constants.swift */,
 			);
 			path = "Number Chat";
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				B443CBA8259D3FAF000FBA7D /* TextMessage.swift in Sources */,
 				B44BF2E1259DE568001896F7 /* ChatViewController.swift in Sources */,
 				B443CB90259D0D15000FBA7D /* SceneDelegate.swift in Sources */,
+				B4773EAC259F708B00D172F0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
