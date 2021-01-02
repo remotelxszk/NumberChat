@@ -27,12 +27,13 @@
                                         <rect key="frame" x="193.5" y="187.5" width="27" height="71.5"/>
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-FS-s0q">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-G5-aOC">
                                         <rect key="frame" x="138" y="371.5" width="138.5" height="75"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-jh-flk" userLabel="Login As Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="75"/>
+                                                <rect key="frame" x="0.0" y="22.5" width="116" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Login to chat:">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -41,7 +42,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
-                                                <rect key="frame" x="116" y="0.0" width="22.5" height="75"/>
+                                                <rect key="frame" x="116" y="18" width="22.5" height="39.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -49,7 +50,15 @@
                                                 <size key="shadowOffset" width="1" height="1"/>
                                             </label>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="u0w-jh-flk" firstAttribute="leading" secondItem="2rn-G5-aOC" secondAttribute="leading" id="9gg-ks-8tW"/>
+                                            <constraint firstItem="gZT-JV-qbv" firstAttribute="leading" secondItem="u0w-jh-flk" secondAttribute="trailing" id="UHZ-gK-2tA"/>
+                                            <constraint firstItem="u0w-jh-flk" firstAttribute="centerY" secondItem="2rn-G5-aOC" secondAttribute="centerY" id="grJ-yl-C8N"/>
+                                            <constraint firstItem="gZT-JV-qbv" firstAttribute="centerY" secondItem="2rn-G5-aOC" secondAttribute="centerY" id="pIw-dY-yU4"/>
+                                            <constraint firstAttribute="trailing" secondItem="gZT-JV-qbv" secondAttribute="trailing" id="rEW-bk-jLC"/>
+                                        </constraints>
+                                    </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="PlaceholderView">
                                         <rect key="frame" x="32.5" y="557.5" width="349" height="74.5"/>
                                         <subviews>
@@ -92,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="68"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="67.633928571428569"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="c2E-rX-adN">
