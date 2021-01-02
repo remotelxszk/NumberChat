@@ -12,13 +12,14 @@ import Firebase
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var signInUserNumber: UILabel!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func LoginButton(_ sender: UIButton) {
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
         Auth.auth().signInAnonymously() { (authResult, error) in
             if let e = error {
                 print(e)

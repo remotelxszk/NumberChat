@@ -18,6 +18,8 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func sendButtonPressed(_ sender: UIButton) {
+        // Use this later as sender name to firestore
+        print(Auth.auth().currentUser?.uid)
     }
     
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {

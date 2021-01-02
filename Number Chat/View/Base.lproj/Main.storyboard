@@ -28,20 +28,21 @@
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="mNb-FS-s0q">
-                                        <rect key="frame" x="154" y="371.5" width="106" height="75"/>
+                                        <rect key="frame" x="138" y="371.5" width="138.5" height="75"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-jh-flk" userLabel="Login As Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="62" height="75"/>
-                                                <state key="normal" title="Login as:">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="75"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                                <state key="normal" title="Login to chat:">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qB-6U-fVY"/>
+                                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qB-6U-fVY"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
-                                                <rect key="frame" x="84" y="0.0" width="22" height="75"/>
-                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="32"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
+                                                <rect key="frame" x="116" y="0.0" width="22.5" height="75"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" systemColor="systemGray2Color"/>
@@ -84,6 +85,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="u0w-jh-flk" id="Qs1-Kv-mIy"/>
                         <outlet property="signInUserNumber" destination="gZT-JV-qbv" id="6Vi-WP-RYJ"/>
                         <segue destination="9Os-4G-qyp" kind="show" identifier="LoginSegue" id="QvZ-Xe-1Rq"/>
                     </connections>
@@ -198,6 +200,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
