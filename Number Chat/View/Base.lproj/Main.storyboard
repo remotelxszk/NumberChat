@@ -44,7 +44,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
                                                 <rect key="frame" x="116" y="18" width="22.5" height="39.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" systemColor="systemIndigoColor"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" systemColor="systemGray2Color"/>
                                                 <size key="shadowOffset" width="1" height="1"/>
@@ -70,6 +70,7 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-Oh-T5J">
                                                 <rect key="frame" x="3" y="0.0" width="408" height="34.5"/>
+                                                <color key="tintColor" systemColor="systemIndigoColor"/>
                                                 <connections>
                                                     <action selector="chatSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OEA-39-ZTV"/>
                                                 </connections>
