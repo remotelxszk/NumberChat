@@ -60,21 +60,27 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="PlaceholderView">
-                                        <rect key="frame" x="32.5" y="557.5" width="349" height="74.5"/>
+                                        <rect key="frame" x="0.0" y="557.5" width="414" height="74.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press above to log in anonymously to the chat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
-                                                <rect key="frame" x="0.0" y="0.0" width="349" height="74.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start by choosing the number of your chat room, and click the button above to log in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
+                                                <rect key="frame" x="0.0" y="33.5" width="414" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-Oh-T5J">
+                                                <rect key="frame" x="3" y="0.0" width="408" height="34.5"/>
+                                            </slider>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="RbT-x9-yCr" secondAttribute="trailing" id="1YU-1U-WGg"/>
-                                            <constraint firstItem="RbT-x9-yCr" firstAttribute="top" secondItem="7TM-eZ-ody" secondAttribute="top" id="Psi-go-fIO"/>
+                                            <constraint firstItem="RbT-x9-yCr" firstAttribute="top" secondItem="ODK-Oh-T5J" secondAttribute="bottom" id="3YW-1W-BPL"/>
+                                            <constraint firstItem="ODK-Oh-T5J" firstAttribute="leading" secondItem="7TM-eZ-ody" secondAttribute="leading" constant="5" id="51G-YV-0UC"/>
                                             <constraint firstAttribute="bottom" secondItem="RbT-x9-yCr" secondAttribute="bottom" id="T8S-SC-DfN"/>
+                                            <constraint firstAttribute="trailing" secondItem="ODK-Oh-T5J" secondAttribute="trailing" constant="5" id="VoS-p4-w5h"/>
                                             <constraint firstItem="RbT-x9-yCr" firstAttribute="leading" secondItem="7TM-eZ-ody" secondAttribute="leading" id="dbz-KP-6ni"/>
+                                            <constraint firstItem="ODK-Oh-T5J" firstAttribute="top" secondItem="7TM-eZ-ody" secondAttribute="top" id="qSz-Zx-aad"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6t-UU-LuD" userLabel="PlaceholderView">
@@ -94,8 +100,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="chatSlider" destination="ODK-Oh-T5J" id="8oO-va-dg1"/>
                         <outlet property="loginButton" destination="u0w-jh-flk" id="Qs1-Kv-mIy"/>
-                        <outlet property="signInUserNumber" destination="gZT-JV-qbv" id="6Vi-WP-RYJ"/>
+                        <outlet property="signInChatNumber" destination="gZT-JV-qbv" id="6Vi-WP-RYJ"/>
                         <segue destination="9Os-4G-qyp" kind="show" identifier="LoginSegue" id="QvZ-Xe-1Rq"/>
                     </connections>
                 </viewController>
