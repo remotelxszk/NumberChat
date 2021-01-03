@@ -70,6 +70,9 @@
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-Oh-T5J">
                                                 <rect key="frame" x="3" y="0.0" width="408" height="34.5"/>
+                                                <connections>
+                                                    <action selector="chatSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OEA-39-ZTV"/>
+                                                </connections>
                                             </slider>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

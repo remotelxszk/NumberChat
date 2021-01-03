@@ -17,8 +17,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         loginButton.layer.cornerRadius = 10.0
+        
         chatSlider.value = 1
+        signInChatNumber.text = "1"
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
@@ -29,6 +32,9 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: Constants.loginSegue, sender: self)
             }
         }
+    }
+    @IBAction func chatSliderChanged(_ sender: UISlider) {
+        signInChatNumber.text = String(format: "%.0f", sender.value)
     }
     
 }
