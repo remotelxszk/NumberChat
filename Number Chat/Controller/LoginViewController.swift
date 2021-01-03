@@ -37,5 +37,11 @@ class LoginViewController: UIViewController {
         signInChatNumber.text = String(format: "%.0f", sender.value)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == Constants.loginSegue{
+            let destinationVC = segue.destination as! ChatViewController
+            destinationVC.currentChat = String(format: "%.0f", chatSlider.value)
+        }
+    }
 }
 

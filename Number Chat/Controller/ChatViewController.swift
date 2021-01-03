@@ -14,10 +14,12 @@ class ChatViewController: UIViewController {
     
     let db = Firestore.firestore()
     
+    var currentChat : String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Chat \(1)" // 1 as placeholder
+        title = "Chat \(currentChat!)"
     }
 
     @IBAction func sendButtonPressed(_ sender: UIButton) {
@@ -25,8 +27,7 @@ class ChatViewController: UIViewController {
         if let messageBody = chatTextField.text, let sender = Auth.auth().currentUser?.uid {
             // Add a document to Firestore with the message data
             
-            // 1 as placeholder
-            db.collection(Constants.FireStore.collection + "\(1)").addDocument(data: [
+            db.collection(Constants.FireStore.collection + "\(currentChat!)").addDocument(data: [
                 Constants.FireStore.senderID: sender,
                 Constants.FireStore.bodyField: messageBody,
                 Constants.FireStore.dateField: Date().timeIntervalSince1970
