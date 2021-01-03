@@ -27,7 +27,7 @@
                                         <rect key="frame" x="193.5" y="187.5" width="27" height="71.5"/>
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                     </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-G5-aOC">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-G5-aOC" userLabel="LoginButtonView">
                                         <rect key="frame" x="138" y="371.5" width="138.5" height="75"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-jh-flk" userLabel="Login As Button">
@@ -59,7 +59,7 @@
                                             <constraint firstAttribute="trailing" secondItem="gZT-JV-qbv" secondAttribute="trailing" id="rEW-bk-jLC"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="PlaceholderView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="DescriptionView">
                                         <rect key="frame" x="0.0" y="557.5" width="414" height="74.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start by choosing the number of your chat room, and click the button above to log in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
