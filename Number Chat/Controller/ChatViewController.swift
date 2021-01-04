@@ -25,6 +25,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         
         messageTableView.delegate = self
+        messageTableView.dataSource = self
         
         title = "Chat \(currentChat!)"
     }
