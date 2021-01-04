@@ -27,6 +27,8 @@ class ChatViewController: UIViewController {
         title = "Chat \(currentChat!)"
     }
 
+    //MARK: - SendingAMessage
+    
     @IBAction func sendButtonPressed(_ sender: UIButton) {
         
         if let messageBody = chatTextField.text, let sender = Auth.auth().currentUser?.uid {
@@ -48,6 +50,8 @@ class ChatViewController: UIViewController {
         }
     }
     
+    //MARK: - Logout
+    
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
@@ -59,6 +63,8 @@ class ChatViewController: UIViewController {
     }
     
 }
+
+//MARK: - TableViewDelegate
 
 extension ChatViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -25,6 +25,8 @@ class LoginViewController: UIViewController {
         
     }
 
+    //MARK: - SignIn
+    
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         Auth.auth().signInAnonymously() { (authResult, error) in
             if let e = error {
@@ -34,9 +36,14 @@ class LoginViewController: UIViewController {
             }
         }
     }
+    
+    //MARK: - ChatSlider
+    
     @IBAction func chatSliderChanged(_ sender: UISlider) {
         signInChatNumber.text = String(format: "%.0f", sender.value)
     }
+    
+    //MARK: - PassSelectedChatAndDisplayNavBar
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.loginSegue{
@@ -47,6 +54,8 @@ class LoginViewController: UIViewController {
             navigationController?.isNavigationBarHidden = false
         }
     }
+    
+    //MARK: - HideNavigationBar
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
