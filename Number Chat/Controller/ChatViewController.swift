@@ -13,8 +13,10 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var chatTextField: UITextField!
     @IBOutlet weak var messageTableView: UITableView!
     
+    // Firestore instance
     let db = Firestore.firestore()
     
+    // Pass the current chat to this string from LoginViewController
     var currentChat : String?
     
     var messages: [TextMessage] = []
@@ -39,7 +41,7 @@ class ChatViewController: UIViewController {
                 Constants.FireStore.bodyField: messageBody,
                 Constants.FireStore.dateField: Date().timeIntervalSince1970
             ]) { (error) in
-                // Catch error
+                // Catch errors
                 if let e = error {
                     print("There was an issue saving data to firestore, \(e)")
                 } else {
