@@ -11,6 +11,7 @@ import Firebase
 class ChatViewController: UIViewController {
     
     @IBOutlet weak var chatTextField: UITextField!
+    @IBOutlet weak var messageTableView: UITableView!
     
     let db = Firestore.firestore()
     
@@ -20,6 +21,8 @@ class ChatViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageTableView.delegate = self
         
         title = "Chat \(currentChat!)"
     }
@@ -55,4 +58,10 @@ class ChatViewController: UIViewController {
         }
     }
     
+}
+
+extension ChatViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // ...
+    }
 }

@@ -181,6 +181,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="chatTextField" destination="O3y-pH-Oqy" id="Zrm-ob-q3p"/>
+                        <outlet property="messageTableView" destination="0O7-Ro-PD8" id="xez-K9-94y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MGt-f1-NES" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
