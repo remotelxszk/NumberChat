@@ -9,6 +9,7 @@ import Foundation
 
 struct Constants {
     static let loginSegue = "LoginSegue"
+    static let cellIdentifier = "ReusableCell"
     
     struct FireStore {
         static let senderID = "senderid"
