@@ -17,9 +17,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // Round button edges
         loginButton.layer.cornerRadius = 10.0
         
+        // Set default chat to 1
         chatSlider.value = 1
         signInChatNumber.text = "1"
         
