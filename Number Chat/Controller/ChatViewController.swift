@@ -46,7 +46,8 @@ class ChatViewController: UIViewController {
     @IBAction func logoutButtonPressed(_ sender: UIBarButtonItem) {
         do {
             try Auth.auth().signOut()
-            dismiss(animated: true, completion: nil)
+            // Go back to the main screen
+            navigationController?.popToRootViewController(animated: true)
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
         }
