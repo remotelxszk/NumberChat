@@ -22,6 +22,9 @@ class LoginViewController: UIViewController {
         
         chatSlider.value = 1
         signInChatNumber.text = "1"
+        
+        // Hide Navigation Bar
+        navigationController?.isNavigationBarHidden = true
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
