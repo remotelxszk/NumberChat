@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct TextMessage {
+    let id: String // sender ID
+    let body: String
+}

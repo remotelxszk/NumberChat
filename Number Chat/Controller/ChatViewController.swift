@@ -16,6 +16,8 @@ class ChatViewController: UIViewController {
     
     var currentChat : String?
     
+    var messages: [TextMessage] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
