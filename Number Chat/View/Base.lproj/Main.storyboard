@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRS-ew-CLh">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,25 +13,25 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Number_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-fo-MGU">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-RS-sJP" userLabel="PlaceholderView">
-                                        <rect key="frame" x="87" y="0.0" width="240" height="66"/>
+                                        <rect key="frame" x="67.666666666666686" y="0.0" width="240" height="49.333333333333336"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-WA-xow" userLabel="Logo Image">
-                                        <rect key="frame" x="193.5" y="178.5" width="27" height="63"/>
+                                        <rect key="frame" x="174.33333333333334" y="162.33333333333334" width="26.666666666666657" height="45.666666666666671"/>
                                         <color key="tintColor" systemColor="secondaryLabelColor"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-G5-aOC" userLabel="LoginButtonView">
-                                        <rect key="frame" x="138" y="354" width="138.5" height="66"/>
+                                        <rect key="frame" x="118.33333333333333" y="320.33333333333331" width="138.33333333333337" height="49.333333333333314"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-jh-flk" userLabel="Login As Button">
-                                                <rect key="frame" x="0.0" y="18" width="116" height="30"/>
+                                                <rect key="frame" x="0.0" y="9.6666666666666856" width="116" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Login to chat:">
@@ -42,7 +42,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
-                                                <rect key="frame" x="116" y="13.5" width="22.5" height="39.5"/>
+                                                <rect key="frame" x="116.00000000000001" y="5" width="22.333333333333329" height="39.333333333333336"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                                 <nil key="highlightedColor"/>
@@ -60,16 +60,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="DescriptionView">
-                                        <rect key="frame" x="0.0" y="531" width="414" height="66"/>
+                                        <rect key="frame" x="0.33333333333334281" y="480.66666666666663" width="374.33333333333326" height="49"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start by choosing the number of your chat room, and click the button above to log in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
-                                                <rect key="frame" x="0.0" y="33.5" width="414" height="41"/>
+                                                <rect key="frame" x="0.0" y="30" width="374.33333333333331" height="61"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-Oh-T5J">
-                                                <rect key="frame" x="3" y="0.0" width="408" height="34.5"/>
+                                                <rect key="frame" x="28" y="0.0" width="318.33333333333331" height="31"/>
                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
                                                 <connections>
                                                     <action selector="chatSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="OEA-39-ZTV"/>
@@ -80,15 +80,15 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="RbT-x9-yCr" secondAttribute="trailing" id="1YU-1U-WGg"/>
                                             <constraint firstItem="RbT-x9-yCr" firstAttribute="top" secondItem="ODK-Oh-T5J" secondAttribute="bottom" id="3YW-1W-BPL"/>
-                                            <constraint firstItem="ODK-Oh-T5J" firstAttribute="leading" secondItem="7TM-eZ-ody" secondAttribute="leading" constant="5" id="51G-YV-0UC"/>
+                                            <constraint firstItem="ODK-Oh-T5J" firstAttribute="leading" secondItem="7TM-eZ-ody" secondAttribute="leading" constant="30" id="51G-YV-0UC"/>
                                             <constraint firstAttribute="bottom" secondItem="RbT-x9-yCr" secondAttribute="bottom" id="T8S-SC-DfN"/>
-                                            <constraint firstAttribute="trailing" secondItem="ODK-Oh-T5J" secondAttribute="trailing" constant="5" id="VoS-p4-w5h"/>
+                                            <constraint firstAttribute="trailing" secondItem="ODK-Oh-T5J" secondAttribute="trailing" constant="30" id="VoS-p4-w5h"/>
                                             <constraint firstItem="RbT-x9-yCr" firstAttribute="leading" secondItem="7TM-eZ-ody" secondAttribute="leading" id="dbz-KP-6ni"/>
                                             <constraint firstItem="ODK-Oh-T5J" firstAttribute="top" secondItem="7TM-eZ-ody" secondAttribute="top" id="qSz-Zx-aad"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6t-UU-LuD" userLabel="PlaceholderView">
-                                        <rect key="frame" x="87" y="708" width="240" height="66"/>
+                                        <rect key="frame" x="67.666666666666686" y="640.66666666666663" width="240" height="49.333333333333371"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
@@ -120,19 +120,19 @@
             <objects>
                 <viewController id="D7G-rD-X3d" customClass="ChatViewController" customModule="Number_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9eF-3V-HzS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tir-by-FCT">
-                                <rect key="frame" x="20" y="818" width="374" height="44"/>
+                                <rect key="frame" x="16" y="734" width="343" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3y-pH-Oqy">
-                                        <rect key="frame" x="0.0" y="5" width="340" height="34"/>
+                                        <rect key="frame" x="0.0" y="5" width="309" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdA-Ke-CJ6">
-                                        <rect key="frame" x="340" y="5" width="34" height="34"/>
+                                        <rect key="frame" x="309" y="5" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="GRs-SG-JgO"/>
                                             <constraint firstAttribute="width" constant="34" id="h70-od-A2J"/>
@@ -156,7 +156,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0O7-Ro-PD8">
-                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="646"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -193,7 +193,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRS-ew-CLh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FSh-W7-K32">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
