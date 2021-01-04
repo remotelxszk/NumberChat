@@ -44,6 +44,9 @@ class LoginViewController: UIViewController {
         if segue.identifier == Constants.loginSegue{
             let destinationVC = segue.destination as! ChatViewController
             destinationVC.currentChat = String(format: "%.0f", chatSlider.value)
+            
+            // Reenable navigation controller in the next view
+            navigationController?.isNavigationBarHidden = false
         }
     }
 }
