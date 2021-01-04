@@ -28,6 +28,10 @@ class ChatViewController: UIViewController {
         messageTableView.dataSource = self
         
         title = "Chat \(currentChat!)"
+        
+        // Register Custom xib file
+        messageTableView.register(UINib(nibName: "TextMessage", bundle: nil), forCellReuseIdentifier: Constants.cellIdentifier)
+        
     }
 
     //MARK: - SendingAMessage
