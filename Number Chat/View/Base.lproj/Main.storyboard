@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zRS-ew-CLh">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -14,27 +14,28 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Number_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="111" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-fo-MGU">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-RS-sJP" userLabel="PlaceholderView">
-                                        <rect key="frame" x="67.666666666666686" y="0.0" width="240" height="49.333333333333336"/>
+                                        <rect key="frame" x="87" y="0.0" width="240" height="66"/>
                                     </view>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-WA-xow" userLabel="Logo Image">
-                                        <rect key="frame" x="174.33333333333334" y="162.33333333333334" width="26.666666666666657" height="45.666666666666671"/>
-                                        <color key="tintColor" systemColor="secondaryLabelColor"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Chat !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8y-cz-2gR">
+                                        <rect key="frame" x="105.5" y="177" width="203" height="66"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-G5-aOC" userLabel="LoginButtonView">
-                                        <rect key="frame" x="93" y="320.33333333333331" width="189" height="49.333333333333314"/>
+                                        <rect key="frame" x="112.5" y="354" width="189" height="66"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0w-jh-flk" userLabel="Login As Button">
-                                                <rect key="frame" x="0.0" y="9.6666666666666856" width="166.66666666666666" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="66"/>
                                                 <color key="backgroundColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <state key="normal" title="Login to chat:">
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Login to Chat:">
                                                     <color key="titleColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 </state>
                                                 <connections>
@@ -42,7 +43,7 @@
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZT-JV-qbv">
-                                                <rect key="frame" x="166.66666666666669" y="5" width="22.333333333333343" height="39.333333333333336"/>
+                                                <rect key="frame" x="166.5" y="13.5" width="22.5" height="39.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" systemColor="systemGray2Color"/>
@@ -50,7 +51,9 @@
                                             </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="u0w-jh-flk" secondAttribute="bottom" id="0AO-mU-3nC"/>
                                             <constraint firstItem="u0w-jh-flk" firstAttribute="leading" secondItem="2rn-G5-aOC" secondAttribute="leading" id="9gg-ks-8tW"/>
+                                            <constraint firstItem="u0w-jh-flk" firstAttribute="top" secondItem="2rn-G5-aOC" secondAttribute="top" id="ASq-db-Gxh"/>
                                             <constraint firstItem="gZT-JV-qbv" firstAttribute="leading" secondItem="u0w-jh-flk" secondAttribute="trailing" id="UHZ-gK-2tA"/>
                                             <constraint firstItem="u0w-jh-flk" firstAttribute="centerY" secondItem="2rn-G5-aOC" secondAttribute="centerY" id="grJ-yl-C8N"/>
                                             <constraint firstItem="gZT-JV-qbv" firstAttribute="centerY" secondItem="2rn-G5-aOC" secondAttribute="centerY" id="pIw-dY-yU4"/>
@@ -58,16 +61,16 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TM-eZ-ody" userLabel="DescriptionView">
-                                        <rect key="frame" x="0.33333333333334281" y="480.66666666666663" width="374.33333333333326" height="49"/>
+                                        <rect key="frame" x="3.5" y="531" width="407" height="66"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start by choosing the number of your chat room, and click the button above to log in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
-                                                <rect key="frame" x="0.0" y="30" width="374.33333333333331" height="61"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Start by choosing the number of your chat room, and click the button above to log in anonymously" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RbT-x9-yCr">
+                                                <rect key="frame" x="0.0" y="48.333333333333314" width="407" height="40.666666666666657"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-Oh-T5J">
-                                                <rect key="frame" x="28" y="0.0" width="318.33333333333331" height="31"/>
+                                                <rect key="frame" x="28" y="0.0" width="351" height="49.333333333333336"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <color key="thumbTintColor" systemColor="labelColor"/>
                                                 <connections>
@@ -86,7 +89,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6t-UU-LuD" userLabel="PlaceholderView">
-                                        <rect key="frame" x="67.666666666666686" y="640.66666666666663" width="240" height="49.333333333333371"/>
+                                        <rect key="frame" x="87" y="708" width="240" height="66"/>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -117,28 +120,28 @@
             <objects>
                 <viewController id="D7G-rD-X3d" customClass="ChatViewController" customModule="Number_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9eF-3V-HzS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDv-fV-k6W">
-                                <rect key="frame" x="0.0" y="734" width="375" height="78"/>
+                                <rect key="frame" x="0.0" y="818" width="414" height="78"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0O7-Ro-PD8">
-                                <rect key="frame" x="0.0" y="88" width="375" height="646"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tir-by-FCT" userLabel="Input View">
-                                <rect key="frame" x="16" y="734" width="343" height="44"/>
+                                <rect key="frame" x="20" y="818" width="374" height="44"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3y-pH-Oqy">
-                                        <rect key="frame" x="0.0" y="5" width="309" height="34"/>
+                                        <rect key="frame" x="0.0" y="5" width="340" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdA-Ke-CJ6">
-                                        <rect key="frame" x="309" y="5" width="34" height="34"/>
+                                        <rect key="frame" x="340" y="5" width="34" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="GRs-SG-JgO"/>
                                             <constraint firstAttribute="width" constant="34" id="h70-od-A2J"/>
@@ -200,7 +203,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zRS-ew-CLh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FSh-W7-K32">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -214,16 +217,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <namedColor name="AccentColor">
             <color red="0.72643512487411499" green="0.66877543926239014" blue="0.87805706262588501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
