@@ -19,7 +19,11 @@ class ChatCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        // Round TextBubble
         textBubble.layer.cornerRadius = 10.0
+        // Cell Clear Background Color
+        self.backgroundColor = UIColor.clear
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
