@@ -9,6 +9,9 @@ import UIKit
 
 class ChatCell: UITableViewCell {
 
+    @IBOutlet weak var LeftViewPlaceholder: UIView!
+    @IBOutlet weak var RightViewPlaceholder: UIView!
+    
     @IBOutlet weak var textBubble: UIView!
     @IBOutlet weak var textBody: UILabel!
     @IBOutlet weak var textSenderID: UILabel!
