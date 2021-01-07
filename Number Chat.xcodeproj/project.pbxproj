@@ -41,6 +41,9 @@
 		B4773EAB259F708B00D172F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4773EB425A3755300D172F0 /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		B4773EB525A3755300D172F0 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		B4B0D65225A6879B002830F9 /* welcome_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_screenshot.png; sourceTree = "<group>"; };
+		B4B0D65325A6879C002830F9 /* light_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_mode_screenshot.png; sourceTree = "<group>"; };
+		B4B0D65425A6879D002830F9 /* dark_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_mode_screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +79,9 @@
 			isa = PBXGroup;
 			children = (
 				B443CBA6259D12E8000FBA7D /* README.md */,
+				B4B0D65425A6879D002830F9 /* dark_mode_screenshot.png */,
+				B4B0D65325A6879C002830F9 /* light_mode_screenshot.png */,
+				B4B0D65225A6879B002830F9 /* welcome_screenshot.png */,
 				B443CB8C259D0D15000FBA7D /* Number Chat */,
 				B443CB8B259D0D15000FBA7D /* Products */,
 				71CDF02145C617C249D0A07A /* Pods */,

@@ -1,2 +1,17 @@
-#  <#Title#>
+#  Number Chat
 
+### Open Source Anonymous Group Communicator
+
+Just choose your group chat **number** and chat away!
+
+Created using [**Firebase**](https://firebase.google.com/docs/ios/setup)
+
+![Light Mode Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/light_mode_screenshot.png?raw=true=414x896)
+![Dark Mode Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/dark_mode_screenshot.png?raw=true=414x896)
+![Login Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/welcome_screenshot.png?raw=true=414x896)
+
+ToDo List:
+- Improve UI
+- Seperate Login View and Chat Selection
+- Replace Chat Slider with a Table View (Like Messenger, WhatsApp, Snapchat and others)
+- Realtime Firestore Notifications
