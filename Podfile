@@ -8,5 +8,6 @@ target 'Number Chat' do
   pod 'IQKeyboardManagerSwift'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'DWAnimatedLabel' 
 
 end

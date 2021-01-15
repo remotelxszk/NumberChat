@@ -41,7 +41,12 @@ class TableViewController: UITableViewController {
         
 
         cell.textLabel?.text = "Sample Message"
+        cell.textLabel?.textColor = .white
+        
         cell.detailTextLabel?.text = "Chat \(indexPath[1] + 1)"
+        cell.detailTextLabel?.textColor = .white
+        
+        cell.backgroundColor = .secondaryLabel
 
         return cell
     }
