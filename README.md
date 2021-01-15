@@ -10,8 +10,9 @@ Created using [**Firebase**](https://firebase.google.com/docs/ios/setup)
 ![Dark Mode Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/dark_mode_screenshot.png?raw=true=414x896)
 ![Login Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/welcome_screenshot.png?raw=true=414x896)
 
-ToDo List:
-- Improve UI
-- Seperate Login View and Chat Selection
-- Replace Chat Slider with a Table View (Like Messenger, WhatsApp, Snapchat and others)
-- Realtime Firestore Notifications
+> ### ToDo List:
+> - Improve UI
+> - Replace placeholder messages in tableview and move some functionality to firestorebrain
+> - Seperate Login View and Chat Selection (DONE)
+> - Replace Chat Slider with a Table View (Like Messenger, WhatsApp, Snapchat and others) (DONE)
+> - Realtime Firestore Notifications (Moved for later)
