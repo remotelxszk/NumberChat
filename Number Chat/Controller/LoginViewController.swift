@@ -6,14 +6,11 @@
 //
 
 import UIKit
-
 import Firebase
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var signInChatNumber: UILabel!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var chatSlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +18,6 @@ class LoginViewController: UIViewController {
         // Round button edges
         loginButton.layer.cornerRadius = 10.0
         
-        // Set default chat to 1
-        chatSlider.value = 1
-        signInChatNumber.text = "1"
         
     }
 
@@ -39,20 +33,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-    //MARK: - ChatSlider
-    
-    @IBAction func chatSliderChanged(_ sender: UISlider) {
-        signInChatNumber.text = String(format: "%.0f", sender.value)
-    }
-    
-    //MARK: - PassSelectedChatAndDisplayNavBar
+    //MARK: - DisplayNavBarInNextTheView
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == Constants.loginSegue{
-            let destinationVC = segue.destination as! ChatViewController
-            destinationVC.currentChat = String(format: "%.0f", chatSlider.value)
-            
-            // Reenable navigation controller in the next view
             navigationController?.isNavigationBarHidden = false
         }
     }
