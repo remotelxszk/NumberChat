@@ -8,7 +8,8 @@ Created using [**Firebase**](https://firebase.google.com/docs/ios/setup)
 
 > ### ToDo List:
 > - Improve UI (kinda DONE? (Fix Darkmode))
-> - Replace placeholder messages in tableview and move some functionality to FirestoreBrain
+> - Replace placeholder messages in tableview and move some functionality to FirestoreBrain (DONE)
+> - Create a custom tableview cell for the chat list to make it look better and display more info
 > - Seperate Login View and Chat Selection (DONE)
 > - Replace Chat Slider with a Table View (Like Messenger, WhatsApp, Snapchat and others) (DONE)
 > - Realtime Firestore Notifications (Moved for later)

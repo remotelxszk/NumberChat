@@ -20,7 +20,7 @@
 		B4773EAC259F708B00D172F0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4773EAB259F708B00D172F0 /* Constants.swift */; };
 		B4773EB625A3755300D172F0 /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4773EB425A3755300D172F0 /* ChatCell.xib */; };
 		B4773EB725A3755300D172F0 /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4773EB525A3755300D172F0 /* ChatCell.swift */; };
-		B4776B4925B21C2400194A6B /* FirestoreBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4776B4825B21C2400194A6B /* FirestoreBrain.swift */; };
+		B4776B4925B21C2400194A6B /* NumberChatBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4776B4825B21C2400194A6B /* NumberChatBrain.swift */; };
 		B4AE237E25B1F5F40017F79D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AE237D25B1F5F40017F79D /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,7 @@
 		B4773EAB259F708B00D172F0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B4773EB425A3755300D172F0 /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		B4773EB525A3755300D172F0 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
-		B4776B4825B21C2400194A6B /* FirestoreBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreBrain.swift; sourceTree = "<group>"; };
+		B4776B4825B21C2400194A6B /* NumberChatBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberChatBrain.swift; sourceTree = "<group>"; };
 		B4AE237D25B1F5F40017F79D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		B4B0D65225A6879B002830F9 /* welcome_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_screenshot.png; sourceTree = "<group>"; };
 		B4B0D65325A6879C002830F9 /* light_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_mode_screenshot.png; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				B443CBA7259D3FAF000FBA7D /* TextMessage.swift */,
-				B4776B4825B21C2400194A6B /* FirestoreBrain.swift */,
+				B4776B4825B21C2400194A6B /* NumberChatBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,7 +267,7 @@
 				B443CB8E259D0D15000FBA7D /* AppDelegate.swift in Sources */,
 				B443CBA8259D3FAF000FBA7D /* TextMessage.swift in Sources */,
 				B4AE237E25B1F5F40017F79D /* TableViewController.swift in Sources */,
-				B4776B4925B21C2400194A6B /* FirestoreBrain.swift in Sources */,
+				B4776B4925B21C2400194A6B /* NumberChatBrain.swift in Sources */,
 				B44BF2E1259DE568001896F7 /* ChatViewController.swift in Sources */,
 				B4773EB725A3755300D172F0 /* ChatCell.swift in Sources */,
 				B443CB90259D0D15000FBA7D /* SceneDelegate.swift in Sources */,

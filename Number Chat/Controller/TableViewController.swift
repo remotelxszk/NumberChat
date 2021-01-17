@@ -11,12 +11,20 @@ import Firebase
 class TableViewController: UITableViewController {
     
     var currentChat: Int?
+    var chatBrain = NumberChatBrain()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Choose your NumberChat!"
-
+        
+        // Make Sample Messages
+        for i in chatBrain.chatNumbers {
+            chatBrain.messages[i] = "Sample Message"
+        }
+        // LoadLastMessages
+        self.loadLastMessages()
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -40,7 +48,7 @@ class TableViewController: UITableViewController {
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "ChatCell")
         
 
-        cell.textLabel?.text = "Sample Message"
+        cell.textLabel?.text = chatBrain.messages[indexPath[1] + 1]
         cell.textLabel?.textColor = .white
         
         cell.detailTextLabel?.text = "Chat \(indexPath[1] + 1)"
@@ -130,4 +138,44 @@ class TableViewController: UITableViewController {
     }
     */
 
+}
+
+//MARK: - GetNewMessagesFromFirestore
+
+extension TableViewController {
+    func loadLastMessages() {
+        // Download documents from this collectionName order by time sent
+        // and listen in real time for changes
+        for chatNumber in chatBrain.chatNumbers {
+            chatBrain.db.collection(Constants.FireStore.collection + "\(chatNumber)")
+                .order(by: Constants.FireStore.dateField)
+                .addSnapshotListener { (querySnapshot, error) in
+                    // Print an error if there is one
+                    if let e = error {
+                        print("There was an issue retrieving data from Firestore. \(e)")
+                        self.chatBrain.messages[chatNumber] = "Error retrieving data"
+                    } else {
+                        // If there are no errors get documents
+                        if let snapshotDocuments = querySnapshot?.documents {
+                            self.chatBrain.messages[chatNumber] = (snapshotDocuments.last?.data()[Constants.FireStore.bodyField] ?? "No messages in this chat yet") as? String
+                        }
+                    }
+                    self.reloadMessagesInTableView()
+                }
+        }
+    }
+}
+
+//MARK: - ReloadDataInTableView
+
+extension TableViewController {
+    func reloadMessagesInTableView() {
+        // Reload TableView data
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            
+            let indexPath = IndexPath(row: (self.chatBrain.messages.count - 1), section: 0)
+            self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        }
+    }
 }
