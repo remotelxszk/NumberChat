@@ -33,7 +33,7 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Replace this with counting the number of collections from Firestore!
-        return 10
+        return chatBrain.chatNumbers.count
     }
 
     //MARK: - TableViewCell

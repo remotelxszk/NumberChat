@@ -15,6 +15,8 @@ class NumberChatBrain {
     
     var messages : [Int : String] = [ : ]
     
+    // Replace this with counting collections from firestore
+    // and making a range out of them
     let chatNumbers = 1...10
 
 }
