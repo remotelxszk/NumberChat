@@ -101,7 +101,7 @@ extension ChatViewController: UITableViewDataSource {
         // This is a message from the current user
         if message.id == Auth.auth().currentUser?.uid {
             cell.textSenderID.isHidden = true
-            cell.textBubble.backgroundColor = UIColor.systemGray
+            cell.textBubble.backgroundColor = UIColor(named: Constants.Colors.secondaryBackgroundColor)
             
             cell.RightViewPlaceholder.isHidden = true
             cell.LeftViewPlaceholder.isHidden = false

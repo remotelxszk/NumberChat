@@ -18,4 +18,14 @@ struct Constants {
         static let dateField = "date"
         static let collection = "chat"
     }
+    
+    struct Colors {
+        static let primaryBackgroundColor = "BackgroundStandardColor"
+        static let secondaryBackgroundColor = "BackgroundSecondaryColor"
+        static let customLabelColor = "CustomLabelColor"
+    }
+    
+    struct Strings {
+        static let noMessages = "[No Messages Yet]" 
+    }
 }

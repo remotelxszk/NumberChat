@@ -46,12 +46,12 @@ class TableViewController: UITableViewController {
         
 
         cell.textLabel?.text = chatBrain.messages[indexPath[1] + 1]
-        cell.textLabel?.textColor = .white
+        cell.textLabel?.textColor = UIColor(named: Constants.Colors.customLabelColor)
         
         cell.detailTextLabel?.text = "Chat \(indexPath[1] + 1)"
-        cell.detailTextLabel?.textColor = .white
+        cell.detailTextLabel?.textColor = UIColor(named: Constants.Colors.customLabelColor)
         
-        cell.backgroundColor = .secondaryLabel
+        cell.backgroundColor = UIColor(named: Constants.Colors.primaryBackgroundColor)
 
         return cell
     }
@@ -114,7 +114,7 @@ extension TableViewController {
                         // If there are no errors get documents
                         if let snapshotDocuments = querySnapshot?.documents {
                             // Get last document for this chats
-                            self.chatBrain.messages[chatNumber] = (snapshotDocuments.last?.data()[Constants.FireStore.bodyField] ?? "No messages in this chat yet") as? String
+                            self.chatBrain.messages[chatNumber] = (snapshotDocuments.last?.data()[Constants.FireStore.bodyField] ?? Constants.Strings.noMessages) as? String
                         }
                     }
                     self.reloadMessagesInTableView()

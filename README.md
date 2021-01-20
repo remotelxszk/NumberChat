@@ -7,7 +7,7 @@ Just choose your group chat **number** and chat away!
 Created using [**Firebase**](https://firebase.google.com/docs/ios/setup)
 
 > ### ToDo List:
-> - Improve UI (kinda DONE? (Fix Darkmode))
+> - Improve UI (DONE)
 > - Replace placeholder messages in tableview and move some functionality to FirestoreBrain (DONE)
 > - Create a custom tableview cell for the chat list to make it look better and display more info
 > - Seperate Login View and Chat Selection (DONE)
