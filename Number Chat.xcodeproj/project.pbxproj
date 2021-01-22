@@ -28,6 +28,10 @@
 		6972E79446B2E535D53B5152 /* Pods_Number_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Number_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D53EE80264EDECE9D6E7D96 /* Pods-Number Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Number Chat.release.xcconfig"; path = "Target Support Files/Pods-Number Chat/Pods-Number Chat.release.xcconfig"; sourceTree = "<group>"; };
 		8FCA28994ADBC44B1829D578 /* Pods-Number Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Number Chat.debug.xcconfig"; path = "Target Support Files/Pods-Number Chat/Pods-Number Chat.debug.xcconfig"; sourceTree = "<group>"; };
+		B4337CB425BB07ED009BDE70 /* dark_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_mode_screenshot.png; sourceTree = "<group>"; };
+		B4337CB625BB0B1C009BDE70 /* light_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_mode_screenshot.png; sourceTree = "<group>"; };
+		B4337CB725BB0B1D009BDE70 /* welcome_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_screenshot.png; sourceTree = "<group>"; };
+		B4337CB825BB0B24009BDE70 /* tableview_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableview_screenshot.png; sourceTree = "<group>"; };
 		B443CB8A259D0D15000FBA7D /* Number Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B443CB8D259D0D15000FBA7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B443CB8F259D0D15000FBA7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,9 +49,6 @@
 		B4773EB525A3755300D172F0 /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		B4776B4825B21C2400194A6B /* NumberChatBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberChatBrain.swift; sourceTree = "<group>"; };
 		B4AE237D25B1F5F40017F79D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		B4B0D65225A6879B002830F9 /* welcome_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome_screenshot.png; sourceTree = "<group>"; };
-		B4B0D65325A6879C002830F9 /* light_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_mode_screenshot.png; sourceTree = "<group>"; };
-		B4B0D65425A6879D002830F9 /* dark_mode_screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dark_mode_screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				B443CBA6259D12E8000FBA7D /* README.md */,
-				B4B0D65425A6879D002830F9 /* dark_mode_screenshot.png */,
-				B4B0D65325A6879C002830F9 /* light_mode_screenshot.png */,
-				B4B0D65225A6879B002830F9 /* welcome_screenshot.png */,
+				B4337CB625BB0B1C009BDE70 /* light_mode_screenshot.png */,
+				B4337CB725BB0B1D009BDE70 /* welcome_screenshot.png */,
+				B4337CB425BB07ED009BDE70 /* dark_mode_screenshot.png */,
+				B4337CB825BB0B24009BDE70 /* tableview_screenshot.png */,
 				B443CB8C259D0D15000FBA7D /* Number Chat */,
 				B443CB8B259D0D15000FBA7D /* Products */,
 				71CDF02145C617C249D0A07A /* Pods */,

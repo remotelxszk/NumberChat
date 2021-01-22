@@ -15,6 +15,7 @@ Created using [**Firebase**](https://firebase.google.com/docs/ios/setup)
 > - Realtime Firestore Notifications (Moved for later)
 
 ![Light Mode Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/light_mode_screenshot.png?raw=true=414x896)
+![TableView Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/tableview_screenshot.png?raw=true=414x896)
 ![Dark Mode Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/dark_mode_screenshot.png?raw=true=414x896)
 ![Login Screenshot](https://github.com/remotelxszk/NumberChat/blob/main/welcome_screenshot.png?raw=true=414x896)
 
