@@ -131,7 +131,7 @@ extension TableViewController {
             // Reload TableView data
             self.tableView.reloadData()
             
-            let indexPath = IndexPath(row: (self.chatBrain.messages.count - 1), section: 0)
+            let indexPath = IndexPath(row: (0), section: 0)
             self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         }
     }
