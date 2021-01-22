@@ -28,6 +28,10 @@ class LoginViewController: UIViewController {
         descriptionLabel.animationType = .shine
         descriptionLabel.backgroundColor = .clear
         
+        // Prepare label to fit on smaller screens
+        descriptionLabel.adjustsFontSizeToFitWidth = true
+        descriptionLabel.minimumScaleFactor = 0.2
+        
     }
 
     //MARK: - SignIn
